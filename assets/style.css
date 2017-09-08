@@ -1,7 +1,99 @@
-#wrapper {
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #555;
+}
+
+.wrapper {
     width: 612px;
     height: 792px;
-    margin: 0 auto;
+    margin: 20px auto;
     background-color: #F9F9FA;
     font-family: sans-serif;
+    color: #161616;
+    border-top: 20px solid #0B3F3C;
+    border-bottom: 20px solid #0B3F3C;
+}
+
+/* positioning */
+main {
+    display: flex;
+    line-height: 1.25;
+    letter-spacing: 1px;
+}
+
+.left-column {
+    width: 40%;
+    padding: 20px;
+}
+
+.right-column {
+    width: 60%;
+    padding: 20px;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+}
+
+/* HEADER */
+header h1 {
+    font-size: 50px;
+}
+header h2 {
+    font-size: 26px;
+}
+
+header h2::before {
+    content: "// ";
+}
+
+header li {
+    font-size: 16px;
+    list-style: none;
+}
+
+/* MAIN */
+main h1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #0B3F3C;
+    border-left: 4px solid #0B3F3C;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+main h2 {
+    font-size: 16px;
+}
+
+main h2 span {
+    font-size: 14px;
+}
+
+main p {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+main li {
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+main li:last-child {
+    margin-bottom: 20px;
+}
+
+main li span{
+    font-size: 12px;;
+}
+
+.skills li {
+    list-style: none;
 }
